@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+Hi Hive, this is Siena! 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this React app, you will find a `components` folder inside of `src` with my implementation of a Dropdown component. To see this component in action in `App.js`, first `npm install` to install dependencies, then run `npm start`. 
 
-## Available Scripts
+Usage of dropdown component: 
+Import the Dropdown component using the `/components/Dropdown` path and call it using `Dropdown`, passing in 3 props: 
+    1. label, which is the default placeholder text inside the dropdown menu
+    2. options, a list of strings containing the options in the dropdown
+    3. multiple, an optional boolean that, if true, creates a multiple select dropdown
 
-In the project directory, you can run:
+To customize dropdown style (e.g. dropdown height and width, color scheme, font family), feel free to change the global variables at the top of the Dropdown.scss file.
 
-### `npm start`
+Future improvements:
+- This dropdown requires a list of unique options. Duplicates is an edge case to consider in the future!
+- An improvement to consider is a prop for the parent component to pass in an onClick function, which would be called whenever the user clicks in the dropdown. This is in the event that the user wants to pull the value that is displayed in the dropdown into the parent component (for example, to submit in a form).
+- If two dropdowns are displayed over one another, they look a little funky. If I had more time, I would play around with backgrounds, opacity, and z-indices to make sure that dropdowns don't break when they display over other items. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
